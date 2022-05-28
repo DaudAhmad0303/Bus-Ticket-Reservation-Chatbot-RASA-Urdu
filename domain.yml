@@ -1,0 +1,148 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- asking_schedule:
+    use_entities: true
+- telling_no_of_tickets_time:
+    use_entities: true
+- asking_seat_no:
+    use_entities: true
+- asking_fair:
+    use_entities: true
+- thanks:
+    use_entities: true
+- telling_dest:
+    use_entities: true
+- telling_source:
+    use_entities: true
+- telling_time:
+    use_entities: true
+- telling_no_of_tickets:
+    use_entities: true
+- confirmation:
+    use_entities: true
+- telling_source_dest:
+    use_entities: true
+- asking_availability:
+    use_entities: true
+- affirmation_for_pay:
+    use_entities: true
+- telling_date:
+    use_entities: true
+- telling_day:
+    use_entities: true
+- telling_time_dest:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_greet:
+  - text: وعلیکم سلام
+  - text: وعلیکم السلام
+  utter_greet_ask_dest:
+  - text: وعلیکم علیکم، آپ کہاں جانا چاہتے ہیں؟
+  utter_ask_time:
+  - text: آپ کو کس ٹائم کی ٹکٹ چاہیے
+  - text: آپ کس وقت جانا چاہتے ہیں
+  - text: آپ کس ٹائم پہ جانا چاہتے ہیں
+  - text: جی آپ کس ٹائم جانا چاہتے ہیں
+  - text: کس وقت کی ٹکٹ چاہیے آپ کو
+  - text: آپ کب جانا چاہتے ہیں
+  - text: کب جانا ہے آپ نے
+  utter_schedule:
+  - text: صبح دس بجے ، دوپہر ایک بجے ، شام پانچ بجے
+  - text: صبح گیارہ بجے ، دوپہر ایک بجے ، شام چار بجے
+  - text: صبح دس بجے ، دوپہر ایک بجے ، شام چار بجے
+  - text: صبح نو بجے ، دوپہر ایک بجے ، شام چھ بجے
+  - text: دوپہر دو بجےاور شام کو چھ بجے
+  - text: صبح گیارہ بجے ، دوپہر تین بجے ، شام چار بجے
+  - text: بس منگل کی صبح 8 بجے چلے گی۔
+  - text: بس منگل کی صبح 8 بجے چلے گی
+  - text: بس دوپہر 2 بجے اور دوسرا شام 5 بجے جائے گی
+  - text: دو بسیں جایں گی پہلی صبح 8 بجے اور دوسری شام 7 بجے
+  - text: صبح 8 بجے اور دوسری شام 7 بجے چلے گی
+  utter_tell_fair:
+  - text: اس کا کرایہ ۱۴۰۰ ہے
+  - text: ایک ٹکٹ کا 1200 روپے کرایہ ہے
+  - text: جی ایک ٹکٹ 700 روپے کی بے
+  - text: چار سو روپے
+  utter_tell_seat_no:
+  - text: آپ کی سیٹ نمبر ۲۴ ہے
+  - text: آپ کی سیٹ نمبر ۳۹ ہے
+  - text: آپ کی سیٹ نمبر ۱۰ ہے
+  - text: آپ کی سیٹ نمبر ۵ ہے
+  - text: آپ کی سیٹ نمبر ۲۵ ہے
+  - text: آپ کی سیٹ نمبر ۱۲ ہے
+  utter_thanks_from_daewoo:
+  - text: ڈیوو سروس استعمال کرنے کا شکریہ
+  utter_greet_ask_help:
+  - text: وعلیکم علیکم، میں آپ کی کیسے مدد کر سکتا ہوں؟
+  - text: جی میں آپ کی کیسے مدد کر سکتا ہوں
+  - text: ہاں، میں آپ کی مدد کیسے کر سکتا ہوں
+  - text: واعلیکم اسلام کیا حکم بھائی
+  utter_ask_dest:
+  - text: آپ کون سے شہر جانا چاہتے ہیں
+  - text: آپ کہاں جانا چاہتے ہیں؟
+  - text: جی آپ کہاں جانا چاہتی ہیں
+  utter_asking_source:
+  - text: آپ کہاں سے جانا چاہتے ہیں
+  utter_asking_no_of_seats:
+  - text: آپ کتنی ٹکٹیں بک کرانا چاہتے ہیں
+  - text: آپ کتنی سیٹیں بک کرنا چاہتے ہیں
+  utter_confirm_ticket_booking:
+  - text: آپ کی ٹکٹ بک ہو گی ہے
+  - text: آپ کے ٹکٹیں بک ہو گئی ہیں
+  - text: ٹھیک آپ کی ٹکٹیں بک ہو گئی ہیں
+  - text: ٹھیک ہے آپ کی سیٹ بک ہو گئی ہے
+  - text: آپ کے ٹکٹ بک ہو چکے ہیں
+  - text: میں نے آپ کی سیٹیں بک کر دی ہیں
+  - text: ٹھیک ہے، آپ کی تین سیٹیں محفوظ ہیں
+  - text: ٹھیک ہے، آپ کا ٹکٹ بک ہو گیا ہے
+  utter_availability_of_ticket:
+  - text: جی مل جائے گی
+  utter_confirmation:
+  - text: ٹھیک ہے
+  utter_greet_ask_time:
+  - text: وعلیکم سلام ۔ جی آپ کس ٹائم پہ جانا چاہتے ہیں
+  utter_greeting_in_daewoo:
+  - text: ڈیوو بس سروس میں خوش آمدید
+  utter_pay_dues:
+  - text: آپ اس کی رقم ادا کر دیں
+  - text: آپ اس کے واجبات ادا کر دیں
+  utter_ask_date:
+  - text: آپ کس دن جانا چاہتے ہیں
+  - text: آپ کس تاریخ کو جانا چاہتے ہیں
+  utter_ask_day:
+  - text: آپ کس دن جانا چاہتے ہیں
+actions: []
+forms: {}
+e2e_actions: []

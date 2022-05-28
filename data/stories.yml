@@ -1,0 +1,401 @@
+version: "2.0"
+stories:
+- story: Story no.2 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_dest
+  - intent: telling_dest
+  - action: utter_asking_source
+  - intent: telling_dest
+  - intent: asking_schedule
+  - action: utter_schedule
+  - intent: telling_time
+  - action: utter_asking_no_of_seats
+  - intent: telling_no_of_tickets
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.3 from Daud
+  steps:
+  - intent: telling_no_of_tickets
+  - action: utter_ask_time
+  - intent: asking_schedule
+  - action: utter_schedule
+  - intent: asking_fair
+  - action: utter_tell_fair
+  - action: utter_tell_seat_no
+  - intent: confirmation
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.4 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: asking_availability
+  - action: utter_ask_dest
+  - intent: telling_source_dest
+  - action: utter_ask_time
+  - intent: asking_schedule
+  - action: utter_schedule
+  - intent: telling_no_of_tickets_time
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.5 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: telling_source_dest
+  - action: utter_ask_time
+  - intent: telling_time
+  - intent: telling_no_of_tickets
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.6 from Daud
+  steps:
+  - intent: telling_dest
+  - intent: asking_schedule
+  - action: utter_schedule
+  - intent: telling_no_of_tickets_time
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.1 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: telling_source_dest
+  - action: utter_ask_time
+  - intent: asking_schedule
+  - action: utter_schedule
+  - intent: telling_no_of_tickets_time
+  - intent: asking_seat_no
+  - intent: asking_fair
+  - action: utter_tell_fair
+  - action: utter_tell_seat_no
+  - action: utter_thanks_from_daewoo
+  - intent: thanks
+- story: Story no.6 Zohaib from Daud
+  steps:
+  - intent: telling_dest
+  - intent: asking_schedule
+  - action: utter_schedule
+  - intent: telling_no_of_tickets_time
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.7 from Daud
+  steps:
+  - intent: greet
+  - intent: telling_source_dest
+  - action: utter_greet
+  - action: utter_ask_time
+  - intent: telling_time
+  - action: utter_confirm_ticket_booking
+  - action: utter_tell_seat_no
+  - action: utter_thanks_from_daewoo
+- story: Story no.8 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: telling_dest
+  - intent: asking_schedule
+  - action: utter_schedule
+  - intent: telling_no_of_tickets_time
+  - action: utter_confirm_ticket_booking
+  - action: utter_pay_dues
+  - intent: affirmation_for_pay
+  - action: utter_thanks_from_daewoo
+- story: Story no.9 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: telling_source_dest
+  - action: utter_availability_of_ticket
+  - action: utter_ask_time
+  - intent: telling_time
+  - intent: telling_no_of_tickets
+  - action: utter_confirm_ticket_booking
+  - action: utter_pay_dues
+  - intent: asking_fair
+  - action: utter_tell_fair
+  - intent: confirmation
+  - action: utter_thanks_from_daewoo
+- story: Story no.10 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: telling_dest
+  - intent: asking_schedule
+  - action: utter_schedule
+  - intent: asking_fair
+  - action: utter_tell_fair
+  - intent: telling_no_of_tickets_time
+  - action: utter_confirmation
+  - action: utter_thanks_from_daewoo
+- story: Story no.11 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: telling_source_dest
+  - intent: telling_no_of_tickets_time
+  - action: utter_confirm_ticket_booking
+  - intent: thanks
+  - action: utter_thanks_from_daewoo
+- story: Story no.12 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_dest
+  - intent: telling_source_dest
+  - intent: asking_schedule
+  - action: utter_schedule
+  - intent: telling_no_of_tickets
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.13 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: telling_source_dest
+  - intent: asking_schedule
+  - action: utter_schedule
+  - intent: telling_no_of_tickets_time
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no. 14 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: asking_availability
+  - action: utter_ask_dest
+  - intent: telling_source_dest
+  - action: utter_ask_time
+  - intent: telling_time
+  - intent: telling_date
+  - action: utter_confirm_ticket_booking
+  - action: utter_pay_dues
+  - action: utter_thanks_from_daewoo
+- story: Story no.15 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: asking_availability
+  - action: utter_ask_dest
+  - intent: telling_source_dest
+  - action: utter_ask_date
+  - intent: telling_date
+  - action: utter_asking_no_of_seats
+  - intent: telling_no_of_tickets
+  - action: utter_ask_time
+  - intent: telling_time
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.16 from Aqib
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_time
+  - intent: telling_dest
+  - action: utter_ask_day
+  - intent: telling_day
+  - action: utter_schedule
+  - intent: telling_no_of_tickets
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.17 from Aqib
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_help
+  - intent: telling_dest
+  - action: utter_ask_time
+  - intent: telling_time
+  - action: utter_asking_no_of_seats
+  - intent: telling_no_of_tickets
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.18 from Aqib
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_help
+  - intent: telling_dest
+  - action: utter_schedule
+  - intent: telling_time
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.18 from Aqib
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_help
+  - intent: asking_availability
+  - action: utter_ask_day
+  - intent: telling_day
+  - intent: telling_source_dest
+  - action: utter_schedule
+  - intent: telling_time
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.20 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_help
+  - intent: telling_dest
+  - action: utter_ask_time
+  - intent: telling_day
+  - action: utter_schedule
+  - intent: telling_time
+  - action: utter_asking_no_of_seats
+  - intent: telling_no_of_tickets
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no. 21 from Aqib
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_dest
+  - intent: telling_dest
+  - action: utter_ask_time
+  - intent: telling_time
+  - action: utter_asking_no_of_seats
+  - intent: telling_no_of_tickets
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.22 from Daud
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_help
+  - intent: telling_source_dest
+  - action: utter_asking_no_of_seats
+  - intent: telling_no_of_tickets
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.23 from Aqib
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_dest
+  - intent: telling_source_dest
+  - action: utter_ask_time
+  - intent: telling_time
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.24 from Aqib
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_dest
+  - intent: telling_dest
+  - action: utter_ask_time
+  - intent: telling_time
+  - action: utter_ask_day
+  - intent: telling_day
+  - action: utter_confirm_ticket_booking
+  - intent: thanks
+  - action: utter_thanks_from_daewoo
+- story: Story no.25 from Aqib
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_dest
+  - intent: telling_dest
+  - action: utter_ask_time
+  - intent: telling_time
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.26 from Sohail
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_help
+  - intent: telling_dest
+  - action: utter_ask_time
+  - intent: telling_time
+  - action: utter_availability_of_ticket
+  - intent: telling_no_of_tickets
+  - action: utter_confirm_ticket_booking
+- story: Story no.27 from Sohail
+  steps:
+  - intent: greet
+  - action: utter_ask_dest
+  - intent: telling_dest
+  - action: utter_schedule
+  - action: utter_asking_no_of_seats
+  - intent: telling_no_of_tickets
+  - action: utter_ask_time
+  - intent: telling_time
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.28 from Sohail
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: telling_no_of_tickets
+  - action: utter_ask_dest
+  - intent: telling_time_dest
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.29 from Sohail
+  steps:
+  - intent: greet
+  - intent: telling_dest
+  - action: utter_ask_day
+  - intent: telling_day
+  - action: utter_ask_time
+  - intent: telling_time
+  - intent: asking_fair
+  - action: utter_tell_fair
+  - intent: telling_no_of_tickets
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.30 from Sohail
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_dest
+  - intent: telling_dest
+  - action: utter_ask_time
+  - intent: telling_day
+  - action: utter_ask_time
+  - intent: telling_time
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.31 from Sohail
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_help
+  - intent: telling_dest
+  - action: utter_ask_day
+  - intent: telling_day
+  - action: utter_ask_time
+  - intent: telling_time
+  - intent: asking_fair
+  - action: utter_tell_fair
+  - action: utter_tell_seat_no
+  - action: utter_thanks_from_daewoo
+- story: Story 32 from Sohail
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: asking_schedule
+  - action: utter_schedule
+  - intent: telling_dest
+  - action: utter_asking_no_of_seats
+  - intent: telling_no_of_tickets
+  - action: utter_confirm_ticket_booking
+  - intent: asking_fair
+  - action: utter_tell_fair
+  - action: utter_thanks_from_daewoo
+- story: Story no.33 from Sohail
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: telling_source_dest
+  - action: utter_asking_no_of_seats
+  - intent: telling_no_of_tickets
+  - action: utter_ask_time
+  - intent: telling_time
+  - intent: asking_fair
+  - action: utter_tell_fair
+  - action: utter_confirm_ticket_booking
+  - action: utter_thanks_from_daewoo
+- story: Story no.34 from Sohail
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_dest
+  - intent: telling_dest
+  - intent: asking_fair
+  - action: utter_tell_fair
+  - action: utter_confirm_ticket_booking
